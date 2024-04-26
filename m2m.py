@@ -15,8 +15,8 @@ else:
 NEW_LINE = '\n'
 HEADER_PATTERN = re.compile(r'^\s*# (.*)$')
 QUESTION_PATTERN = re.compile(r'^(\s*)\*(\s)(.*)$')
-CORRECT_ANSWER_PATTERN = re.compile(r'^(\s*)-(\s)(.*) $')
-WRONG_ANSWER_PATTERN = re.compile(r'^(\s*)-(\s)(.*[^ ])$')
+CORRECT_ANSWER_PATTERN = re.compile(r'^(\s*)-(\s)(.*)\+$')
+WRONG_ANSWER_PATTERN = re.compile(r'^(\s*)-(\s)(.*[^\+])$')
 SWITCH_PRE_TAG_PATTERN = re.compile(r'^```.*$')
 EMPTY_LINE_PATTERN = re.compile(r'^\s*$')
 IMAGE_PATTERN = re.compile(r'!\[.*\]\((.+)\)')
